@@ -10,15 +10,25 @@
  */
 public class Driver {
     public static void main(String[] args) {
-        int[] array = new int[]{7,-1,9,2,8,1,0};
-        MergeSort mergeSort = new MergeSort();
-        for (int b : mergeSort.mergeSort(array, 0, array.length-1)) {
-            System.out.println(b);
-        }
+        Combination c = new Combination();
+        c.getCombinations(new int[]{1,2,3,4,5}, 2).stream().forEach( com -> {
+            for (int i :com) {
+                System.out.print(i);
+            }
+            System.out.println();
+        });
         
         
         
     }
 
-    
+    private static void mergeSortChecker() {
+        int[] array = new int[]{7,-1,9,2,8,1,0};
+        MergeSort mergeSort = new MergeSort();
+        for (int b : mergeSort.mergeSort(array, 0, array.length-1)) {
+            System.out.println(b);
+        }
+    }
+
+
 }
