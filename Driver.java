@@ -1,20 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  * @author vkarunakaran
  */
 public class Driver {
     public static void main(String[] args) {
+        TreeReconstructionInorderPreorder reconstructionInorderPreorder = new TreeReconstructionInorderPreorder();
+        reconstructionInorderPreorder.buildTree(new int[]{1, 0, 2, 4, 3}, new int[]{2, 1, 0, 3, 4}, 0, 4);
+    }
+
+    private static void stringPermutationChecker() {
         Permutations p = new Permutations();
         p.getPerm("abc").forEach(w -> {
             System.out.println(w);
         });
-
-
     }
 
     private static void combinationChecker() {
