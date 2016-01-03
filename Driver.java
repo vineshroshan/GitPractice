@@ -3,6 +3,11 @@
  */
 public class Driver {
     public static void main(String[] args) {
+        NumberOfWaysToReachNumberDP n = new NumberOfWaysToReachNumberDP();
+        System.out.println(n.numberofWays(0, 4, null, 0, new long[100]));
+    }
+
+    private static void numberofWaysToReachGoal() {
         NumberOfWaysToReachNumber n = new NumberOfWaysToReachNumber();
         System.out.println(n.numberofWays(0, 10, null, 0));
     }
