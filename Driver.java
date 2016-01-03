@@ -3,6 +3,11 @@
  */
 public class Driver {
     public static void main(String[] args) {
+        NumberOfWaysToReachNumber n = new NumberOfWaysToReachNumber();
+        System.out.println(n.numberofWays(0, 10, null, 0));
+    }
+
+    private static void treeReconstruction() {
         TreeReconstructionInorderPreorder reconstructionInorderPreorder = new TreeReconstructionInorderPreorder();
         reconstructionInorderPreorder.buildTree(new int[]{1, 0, 2, 4, 3}, new int[]{2, 1, 0, 3, 4}, 0, 4);
     }
