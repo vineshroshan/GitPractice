@@ -3,6 +3,11 @@
  */
 public class Driver {
     public static void main(String[] args) {
+        RobotPath robotPath = new RobotPath();
+        System.out.println(robotPath.getRobotPaths(0, 0, 2, 0, new int[4][4]));
+    }
+
+    private static void numberofwaysDP() {
         NumberOfWaysToReachNumberDP n = new NumberOfWaysToReachNumberDP();
         System.out.println(n.numberofWays(0, 4, null, 0, new long[100]));
     }
