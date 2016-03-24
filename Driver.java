@@ -3,6 +3,11 @@
  */
 public class Driver {
     public static void main(String[] args) {
+        EliminateDuplicateCharacters eliminateDuplicateCharacters = new EliminateDuplicateCharacters();
+        System.out.println(eliminateDuplicateCharacters.getUniqueCharacterString("hellllllooooogggggooooooddddd".toCharArray()));
+    }
+
+    private static void RobotPath() {
         RobotPath robotPath = new RobotPath();
         System.out.println(robotPath.getRobotPaths(0, 0, 2, 0, new int[4][4]));
     }
@@ -24,9 +29,7 @@ public class Driver {
 
     private static void stringPermutationChecker() {
         Permutations p = new Permutations();
-        p.getPerm("abc").forEach(w -> {
-            System.out.println(w);
-        });
+        p.getPerm("abc").forEach(w -> System.out.println(w));
     }
 
     private static void combinationChecker() {
